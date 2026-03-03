@@ -1,0 +1,23 @@
+.contactForm{
+    padding: 15px;
+}
+
+.sendButton{
+margin-top: 10px;
+}
+
+.emailImg{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.emailDiv{
+    display: flex;
+    display: flex;
+    justify-content: center;  
+    align-items: center;       
+    gap: 10px;
+    padding-top: 50px;
+    margin-left: 50px;
+}
