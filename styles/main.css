@@ -1,0 +1,106 @@
+*{
+  font-family: 'Verdana', sans-serif;
+  color: rgb(22, 55, 76);
+}
+
+body{
+  background-color: #F8F7F3 !important;
+}
+
+li{
+    font-family: 'Verdana', sans-serif;
+    font-size: 16px;
+}
+
+ul {
+  list-style-position: inside; /* bullets appear inside the text box */
+}
+
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav{
+    position: fixed;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.title{
+  padding-top: 70px;
+  font-size: 40px;
+  margin: 0;
+  text-align: center;
+}
+
+
+.css-row-gap{
+  padding: 10px;
+}
+
+.css-row-gap2{
+  padding: 40px;
+}
+
+.text {
+  color: black;
+  font-size: 15px;
+}
+
+.hideElement {
+  display: none;
+}
+
+.card-center {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+
+.nav-link{
+  transition: all 0.2s;
+}
+.nav-link.active{
+  border-bottom: 2px solid #0a2d3c !important;
+  color: #0a2d3c !important;
+  font-weight: bold !important;
+}
+
+.nav-link:hover{
+color: #0a2d3c !important;
+border-bottom: 2px solid #0a2d3c;
+}
+
+.navbar-brand {
+  color: #0a2d3c !important;
+}
+
+.navbar-light{
+  background-color: #f0efec !important;
+}
+
+.navbar-nav > li{
+  padding-left:20px;
+  padding-right:20px;
+}
+
+.about-heading2 {
+  padding-top: 70px;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+}
+
+.about-heading {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+}

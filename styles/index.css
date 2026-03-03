@@ -1,0 +1,129 @@
+.page-banner {
+  position: relative;
+  width: 100%;
+  text-align: right;   /* optional, aligns overlay text */
+  color: white;
+}
+
+/* Banner image: always fully visible */
+.banner-img {
+  width: 100%;    /* full width */
+  height: 500px;   /* keep original proportions */
+  display: block;
+}
+
+/* Overlay text positioned relative to image */
+.banner-content {
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+  max-width: 45%;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+/* Styling for text and button */
+.banner-content h1 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: right;
+}
+
+.banner-content p {
+  font-size: 0.85rem;
+  text-align: right;
+}
+
+.btn-gold {
+  background-color: #D4AF37;
+  color: #0B1F3B;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.75rem;
+  border-radius: 0.25rem;
+}
+
+.btn-gold:hover {
+  background-color: #c49c2f;
+  color: #fff;
+}
+
+/* Make text scale instead of moving */
+@media (max-width: 992px) {
+  .banner-content {
+    max-width: 60%;
+    right: 1.5rem;
+  }
+
+  .banner-content h1 {
+    font-size: 1rem;
+  }
+
+  .banner-content p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner-content {
+    max-width: 70%;
+    right: 1rem;
+  }
+
+  .banner-content h1 {
+    font-size: 0.85rem;
+  }
+
+  .banner-content p {
+    font-size: 0.7rem;
+  }
+}
+/* Headline and subtitle */
+.hero-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: white;
+  text-align: right;
+}
+
+.hero-subtitle {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: white;
+  align-items: right;
+}
+/* Section background */
+.about-section {
+  padding: 80px 0;
+}
+
+/* Typography & layout */
+.about-text {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about-body {
+  font-size: 1.15rem;
+  line-height: 1.75;
+  font-weight: 300;
+}
+
+/* Optional subtle fade-in animation */
+.about-section {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
