@@ -61,35 +61,45 @@
     <div class="container">
     <div class="row">
     
-    <div class="col-md-6">
-        <form action="mailto:accounts@keystoneeconomics.co.uk">
-            <h2 class="text-center">The easiest way to get in touch</h2><hr>
-            <div class="form-group">
-                <label for="InputFirstname">Full Name*</label>
-                <input type="name" class="form-control" id="InputName" aria-describedby="nameHelp" placeholder="Enter Name">
-            </div>
-            <div class="form-group">
-                <label for="InputEmail">Email*</label>
-                <input type="email" class="form-control" id="InputSurname" aria-describedby="surnameHelp" placeholder="Enter Surname">
-            </div>
-            <div class="form-group">
-                <label for="InputPhone">Telephone</label>
-                <input type="tel" class="form-control" id="InputPhone" aria-describedby="phoneHelp" placeholder="Enter Phone Number">
-            </div>
-            <div class="form-group">
-                <label for="InputFirstname">Company Name</label>
-                <input type="name" class="form-control" id="InputName" aria-describedby="nameHelp" placeholder="Enter Company Name">
-            </div>
-            <div class="form-group">
-                    <label for="Message">Nature of your enquiry*</label>
-                    <textarea class="form-control" id="Message" rows="10"></textarea>
-            </div>
-            <input type="checkbox" id="consent" name="consent" value="Yes">
-            <label for="consent"> By submitting this form you agree that we may process your information in-line with our privacy policy. </label><br>
-            <input type="submit" class="btn btn-primary sendButton" value="Send">
-            <div class="row css-row-gap"></div>
-        </form>
+<div class="col-md-6">
+    <form action="send.php" method="POST">
+
+    <h2 class="text-center">The easiest way to get in touch</h2><hr>
+    
+    <div class="form-group">
+    <label>Full Name*</label>
+    <input type="text" name="name" class="form-control" placeholder="Enter Name" required>
     </div>
+    
+    <div class="form-group">
+    <label>Email*</label>
+    <input type="email" name="email" class="form-control" placeholder="Enter Email" required>
+    </div>
+    
+    <div class="form-group">
+    <label>Telephone</label>
+    <input type="tel" name="phone" class="form-control" placeholder="Enter Phone Number">
+    </div>
+    
+    <div class="form-group">
+    <label>Company Name</label>
+    <input type="text" name="company" class="form-control" placeholder="Enter Company Name">
+    </div>
+    
+    <div class="form-group">
+    <label>Nature of your enquiry*</label>
+    <textarea name="message" class="form-control" rows="10" required></textarea>
+    </div>
+    
+    <input type="checkbox" name="consent" required>
+    <label> By submitting this form you agree that we may process your information in line with our privacy policy.</label>
+    
+    <br><br>
+    
+    <input type="submit" class="btn btn-primary sendButton" value="Send">
+    
+    </form>
+</div>
 
     <div class="col-md-6">
         <h2 class="text-center">Or you can email us</h2><hr>
