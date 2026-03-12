@@ -21,3 +21,8 @@ margin-top: 10px;
     padding-top: 50px;
     margin-left: 50px;
 }
+
+.btn-primary{
+  background-color: #B38A4C !important;
+  border: #B38A4C !important;
+}
